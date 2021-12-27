@@ -1,0 +1,31 @@
+.container {
+  &__categories {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Pushster";
+    p {
+      font-size: 1.5rem;
+      color: #808080;
+      letter-spacing: 0.5rem;
+      &:hover {
+        cursor: pointer;
+        color: black;
+      }
+    }
+    @media only screen and (max-width: 900px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__products {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    @media only screen and (max-width: 900px) {
+      justify-content: center;
+    }
+  }
+}
